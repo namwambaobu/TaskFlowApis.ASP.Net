@@ -163,3 +163,5 @@
 /home/elias/RiderProjects/TaskFlow.Api/TaskFlow.Api/obj/Debug/net10.0/TaskFlow.Api.pdb
 /home/elias/RiderProjects/TaskFlow.Api/TaskFlow.Api/obj/Debug/net10.0/TaskFlow.Api.genruntimeconfig.cache
 /home/elias/RiderProjects/TaskFlow.Api/TaskFlow.Api/obj/Debug/net10.0/ref/TaskFlow.Api.dll
+/home/elias/RiderProjects/TaskFlow.Api/TaskFlow.Api/bin/Debug/net10.0/Npgsql.dll
+/home/elias/RiderProjects/TaskFlow.Api/TaskFlow.Api/bin/Debug/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
