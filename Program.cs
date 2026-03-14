@@ -1,13 +1,17 @@
-using Microsoft.OpenApi;
 using Microsoft.EntityFrameworkCore;
-using TaskFlow.Api.Database;
+using Microsoft.OpenApi;
+using TaskFlow.Api;
+using TaskFlow.Api.Database; // Your namespace for AppDbContext
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 builder.Services.AddControllers();
+
+// Add EF Core PostgreSQL DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 // Add Swagger services
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
@@ -34,9 +38,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
