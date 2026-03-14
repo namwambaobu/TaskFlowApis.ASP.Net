@@ -20,7 +20,7 @@ public class CreateTaskHandler
             Description = request.Description,
             Priority = request.Priority,
             DueDate = request.DueDate,
-            Status = TaskStatus.Pending
+            Status = TaskStatus1.Pending
         };
 
         _db.Tasks.Add(task);

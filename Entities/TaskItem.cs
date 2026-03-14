@@ -8,7 +8,7 @@ public class TaskItem
 
     public string? Description { get; set; }
 
-    public TaskStatus Status { get; set; }
+    public TaskStatus1 Status { get; set; }
 
     public TaskPriority Priority { get; set; }
 
